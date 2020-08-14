@@ -71,32 +71,6 @@
 
         }
     }
-
-    .footer {
-        &__inner {
-            flex-direction: column;
-            max-width: 500px;
-            margin: 0 auto;
-            align-items: flex-end;
-            position: relative;
-        }
-
-        &__links {
-            flex-direction: column;
-            position: absolute;
-            left: 0;
-        }
-
-        &__list {
-            margin: 6px 0;
-        }
-
-        &__item {
-            max-width: 220px;
-            width: 100%;
-        }
-
-    }
 }
 
 @media(max-width: 806px) {
@@ -218,13 +192,44 @@
         }
         
     }
+
+    .footer {
+        &__inner {
+            padding-top: 15px;
+            padding-bottom: 100px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__links {
+            justify-content: space-around;
+            max-width: 100% !important;
+            position: absolute;
+            bottom: 5px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 
 @media(max-width: 620px) {
+
+    .slider {
+
+        &__text {
+            max-width: fit-content;
+        }
+    }
+
     .new {
         &__inner {
             max-width: 300px;
+        }
+
+        &__item:hover {
+            box-shadow: none;
         }
 
         .slick-dots {
@@ -241,6 +246,33 @@
     .best {
         &__item {
             margin-left: 0;
+        }
+    }
+
+    .footer {
+        &__inner {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &__links {
+            justify-content: flex-start;
+            align-items: start;
+            position: static;
+            padding: 0;  
+        }
+
+        &__list {
+            padding: 0px 10px 15px 15px;
+            & + & {
+                margin-left: 0px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 10px;
         }
     }
 }
@@ -282,8 +314,10 @@
     .slider {
 
         &__info {
-            left: 3%;
-            bottom: 30px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
 
         &__title {
@@ -295,10 +329,32 @@
         }
     }
 
+    .new {
+        padding: 20px;
+
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+
+    .sale {
+        margin-bottom: 20px;
+    }
+
     .best {
+
+        &__inner {
+            margin-top: 0px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+        
         &__item {
             min-width: 100%;
             padding: 0 5px;
+            justify-content: space-around;
         }
     }
 
@@ -313,34 +369,4 @@
         }
     }
 
-    .footer {
-        &__inner {
-            flex-direction: column;
-            max-width: 500px;
-            margin: 0 auto;
-            justify-content: center;
-            align-items: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        &__links {
-            flex-direction: column;
-            position: initial;
-            left: 0;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        &__list {
-            padding: 0;
-            padding-left: 15px;
-        }
-
-        &__logo {
-            margin-bottom: 10px;
-        }
-
-
-    }
 }

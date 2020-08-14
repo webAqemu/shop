@@ -10,6 +10,14 @@ $(function () {
                 speed: 1000,
                 initialSlide: 1,
                 arrows: false,
+                responsive: [
+                        {
+                                breakpoint: 621,
+                                settings: {
+                                        swipe: false,
+                                }
+                        },
+                      ]
         });
 
         $('.new__inner').slick({
