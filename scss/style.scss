@@ -105,6 +105,7 @@
         display: flex;
         height: 120px;
         align-items: center;
+        position: relative;
     }
 
     &__menu {
@@ -218,40 +219,45 @@
     &__form {
         display: flex;
         align-items: center;
-        position: relative;
+
     }
 
     &__input {
-        height: 60px;
-        width: 0;
+        height: 0;
+        width: auto;
         background-color: #fff;
         position: absolute;
-        right: 0;
-        top: -19px;
+        right: 160px;
+        left: 30px;
+        top: 10px;
         transition: all .5s;
+        overflow: hidden;
         &.active {
-            width: 220px;
+            height: 60px;
             padding-right: 20px;
             padding-left: 10px;
         }
     }
 
     &__input-inner {
-        height: 20px;
+        height: fit-content;
         border: none;
-        border-bottom: 1px solid #edeff1;
         position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 0;
+        top: 21px;
+        left: 20px;
+        width: 100%;
         overflow-x: hidden;
         transition: width .5s;
         outline: none;
         background-color: #fff;
         z-index: 20;
         padding: 0;
+        font-size: 18px;
+        &::placeholder {
+            font-size: 18px;
+        }
         &.active {
-            width: 180px;
+            border-bottom: 1px solid #edeff1;
             padding-left: 10px;
         }
     }
