@@ -442,7 +442,7 @@
 
 .new {
     margin-top: -31px;
-    padding: 120px 0;
+    padding: 40px 0;
     text-align: center;
 
     &__title {
@@ -460,7 +460,7 @@
     }
 
     &__inner {
-        margin-top: 75px;
+        margin-top: 40px;
     }
 
     &__item {
@@ -596,13 +596,13 @@
     }
 
     &__dots {
-        margin-top: 80px;
+        margin-top: 30px;
         background-color: #fff;
         height: 55px;
     }
 
     .slick-dots {
-        bottom: -118px;
+        bottom: -68px;
     }
 
     .slick-dots li button:before {
@@ -629,16 +629,18 @@
 }
 
 .sale {
-    margin-bottom: 110px;
+    margin-bottom: 90px;
 
     &__inner {
         border: 1px solid #eaedef;
         background-color: #fff;
         padding: 9px 45px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         max-width: 670px;
+        height: fit-content;
     }
 
     &__sale {
@@ -648,8 +650,8 @@
     &__percent {
         color: #ffffff;
         font-size: 12px;
-        width: 80px;
-        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
         background-image: url(../img/sale-img.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -802,8 +804,9 @@
     }
 
     &__item {
-        min-width: 370px;
-        height: 150px;
+        max-width: 400px;
+        width: 100%;
+        min-height: 150px;
         display: flex;
         align-items: center;
         background-color: #fff;
@@ -839,7 +842,7 @@
     }
 
     &__info {
-        margin-left: 55px;
+        margin-left: auto;
         max-width: 175px;
     }
 
@@ -922,7 +925,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 35px 50px;
-        margin-bottom: 120px;
+        margin-bottom: 70px;
     }
 
     &__info {
